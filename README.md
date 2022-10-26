@@ -17,4 +17,4 @@ $ docker network create -d ipvlan --subnet x.x.x.x/mask --gateway x.x.x.x  -o pa
 
 4.) run
 -- ip: ip address from company vlan
-$ docker container run --network net_ipvlan -p 3306:3306 --ip x.x.x.x -v xxxx_mysql_4-0-27_hu2:/usr/local/mysql/ --name xxxx_mysql_4-0-27_hu2 -e MYSQL_ROOT_PASSWORD=xxxxx mysql_4-0-27_hu2
+$ docker container run --network net_ipvlan -p 3306:3306 --ip x.x.x.x -v xxxx_mysql_4-0-27_hu2:/usr/local/mysql/ --name xxxx_mysql_4-0-27_hu2 -e MYSQL_ROOT_PASSWORD=xxxxx -d mysql_4-0-27_hu2
